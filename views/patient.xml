@@ -1,0 +1,22 @@
+<odoo>
+	<data>
+    <record model="ir.actions.act_window" id="action_hospital_patient">
+      <field name="name">Patient</field>
+      <field name="res_model">model.patient</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.ui.view" id="patient_list">
+      <field name="name">Patient</field>
+      <field name="model">model.patient</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name" />
+          <field name="last_name" />
+          <field name="syntoms" />
+          <field name="diagnostic_relation" widget="many2many_tags" />
+        </tree>
+      </field>
+    </record>
+  </data>
+</odoo>

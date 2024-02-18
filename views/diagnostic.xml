@@ -1,0 +1,21 @@
+<odoo>
+	<data>
+    <record model="ir.actions.act_window" id="action_hospital_diagnostic">
+      <field name="name">Diagnostic</field>
+      <field name="res_model">model.diagnostic</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    
+    <record model="ir.ui.view" id="diagnostic_list">
+      <field name="name">Diagnostic</field>
+      <field name="model">model.diagnostic</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="description" />
+          <field name="doctor_relation" />
+          <field name="patient_relation" />
+        </tree>
+      </field>
+    </record>
+  </data>
+</odoo>
